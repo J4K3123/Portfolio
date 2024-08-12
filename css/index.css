@@ -57,6 +57,22 @@ a{color: inherit;}
 }
 /*Mail*/
 #main{
-    margin-top: 100px;
+    margin-top: 110px;
     margin-bottom: 70px;
+}
+#contact{
+    max-width: fit-content;
+    margin: auto;
+    align-content: center;
+}
+.icon{
+    width: 40px;
+    float: left;
+}
+.iconlabel{
+    text-decoration: underline;
+    justify-content: center;
+    line-height: 1.5;
+    margin-left: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
