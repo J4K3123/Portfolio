@@ -8,9 +8,6 @@
     margin: auto;
     border-radius: 10px;
 }
-.heading{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 #iconbox{
     height: 30px;
     width: 250px;
@@ -27,6 +24,7 @@
     position: absolute;
     margin-left: 50px;
     margin-top: 10px;
+    text-decoration: underline;
 
 }
 @media (max-width: 600px) {
