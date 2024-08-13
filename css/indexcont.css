@@ -1,8 +1,7 @@
 #main{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 .skill{
     height: 50px;
@@ -18,11 +17,12 @@
     color: black;
 }
 .text{
-    margin-top: 5px;
     font-size: 15px;
     color:  black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 22px;
 }
 #skills{
     width: 150px;
@@ -30,9 +30,4 @@
     border-radius: 10px;
     margin: 10px;
     display: block;
-}
-.text{
-    position: absolute;
-    margin-left: 70px;
-    margin-top: 22px;
 }
