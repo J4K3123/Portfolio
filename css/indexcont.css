@@ -1,7 +1,10 @@
-#main{
+#skillsCont{
+    max-width: 1010px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: aqua;
 }
 .skill{
     height: 50px;
@@ -28,6 +31,7 @@
     width: 150px;
     background-color: rgb(244, 244, 244);
     border-radius: 10px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     display: block;
 }
