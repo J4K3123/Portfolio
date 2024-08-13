@@ -53,9 +53,9 @@
 .btn{
     background-color: rgb(244, 244, 244);
     padding: 10px;
-    color:  black;
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 70px;
+    font: 100;
     margin-bottom: 30px;
     width: 200px;
     border: none;
