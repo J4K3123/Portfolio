@@ -5,7 +5,7 @@
     --header-bg: rgba(240, 238, 233, 0.9);
     --text-dark: #111111;
     --text-muted: #666666;
-    --accent-red: #2D6A4F;
+    --accent: #2D6A4F;
     --card-bg: #FFFFFF;
     --border-color: #DCD7CE;
     --badge-bg: #111111;
@@ -25,7 +25,7 @@
     --header-bg: rgba(18, 18, 18, 0.9);
     --text-dark: #F4F1EA;
     --text-muted: #A0A0A0;
-    --accent-red: #FFB703;
+    --accent: #FFB703;
     --card-bg: #1E1E1E;
     --border-color: #2D2D2D;
     --badge-bg: #F4F1EA;
@@ -139,7 +139,7 @@ body {
 }
 
 [data-theme="dark"] .status-dot {
-    background-color: var(--accent-red);
+    background-color: var(--accent);
     box-shadow: 0 0 8px rgba(255, 77, 90, 0.6);
 }
 
@@ -194,7 +194,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.hero-text h1 .highlight { color: var(--accent-red); }
+.hero-text h1 .highlight { color: var(--accent); }
 .hero-text h1 .outlined {
     color: transparent;
     -webkit-text-stroke: 2px var(--text-dark);
@@ -210,7 +210,7 @@ body {
     position: relative;
     width: 100%;
     height: 350px;
-    background-color: var(--accent-red);
+    background-color: var(--accent);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border-color);
@@ -254,7 +254,7 @@ body {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--accent-red);
+    color: var(--text-muted);
     margin-bottom: 0.8rem;
 }
 
@@ -267,7 +267,7 @@ body {
 .skill-pill {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    color: var(--text-dark);
+    color: var(--accent);
     font-family: var(--font-mono);
     font-size: 0.85rem;
     font-weight: 600;
@@ -330,7 +330,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--accent-red);
+    color: var(--accent);
 }
 
 .exp-company {
@@ -366,7 +366,7 @@ body {
 .process-step {
     font-family: var(--font-display);
     font-size: 2rem;
-    color: var(--accent-red);
+    color: var(--accent);
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -420,7 +420,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: var(--accent-red);
+    color: var(--accent);
     font-weight: 700;
 }
 
@@ -462,7 +462,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: var(--accent-red);
+    color: var(--accent);
     font-weight: 700;
 }
 
@@ -549,7 +549,7 @@ body {
 }
 
 .btn-submit:hover {
-    background: var(--accent-red);
+    background: var(--accent);
     color: #FFFFFF;
 }
 
@@ -560,7 +560,7 @@ body {
 }
 
 .form-status.success { color: #2D6A4F; }
-.form-status.error { color: var(--accent-red); }
+.form-status.error { color: var(--accent); }
 **/
 
 /* Floating Dock Navigation */
@@ -613,7 +613,7 @@ body {
 }
 
 .dock-cta.active {
-    background: var(--accent-red) !important;
+    background: var(--accent) !important;
     color: #FFFFFF !important;
 }
 
@@ -663,7 +663,7 @@ body {
 }
 
 #modalCategory {
-    color: var(--accent-red);
+    color: var(--accent);
     font-weight: bold;
     font-size: 0.85rem;
     text-transform: uppercase;
