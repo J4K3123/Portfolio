@@ -1,67 +1,269 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en" data-theme="light">
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/indexcont.css">
-    <link rel="stylesheet" href="css/welcome.css">
-    <div id="welcomeScreen" class="welcome-screen">
-        <div class="welcome-content">
-            <img src="img/logo.png" style="height: 100px;">
-            <h1>Web Dev Portfolio</h1>
-            <button id="enterButton" class="enter-button">Enter</button>
-        </div>
-    </div>
-    <script src="js/welcome.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <section id="Banner">
-        <a href="index.html"><img id="logo" src="img/logo.png"></a>
-    </section>
-    <section id="Navigation">
-        <ul>
-            <li class="a"><a href="#index">about me</a></li>
-            <li id="prev"><a href="prev.html">previous work</a></li>
-            <li id="contact"><a href="contact.html">contact</a></li>
-          </ul>
-    </section>
-</header>
 <body>
-    <section id="main">
-        <div id = "bioCont">
-        <img id="portrait" src="img/Portrait.jpg">
-        <h1 id="title">Hi, I'm Jake</h1>
-        <p id="bio" class="text">
-            As a passionate Computing graduate based in Nottingham, I have a keen interest in web
-            development, I bring a dynamic blend of technical skills, problem-solving abilities, 
-            and a strong drive for continuous learning to further enhance the skills I have learnt 
-            throughout my studies. Through my studies, I have actively engaged in practical group projects
-            to apply and enhance my skills. These projects include small cyber security group coursework 
-            assignments to a larger client based project to implement new features to their existing website.</p>
-            <p id="bio" class="text">I look forward to hearing from you. Feel free to get in touch via the links on my contact page.</p>
-        <a href="https://docs.google.com/document/d/1N0rI4jBm4O-yNFpCr5YSGPRij1pi01-ItIcLS1YXn2g/edit?usp=sharing"><button type="submit" class="btn">View My CV</button></a>
+    <header class="header">
+        <div class="header-left">
+            <span class="app-badge">DEV // v2</span>
         </div>
-        <h1 id="title">Skills</h1>
-        <section id="skillsCont">
-            <div id="skills">
-                <img class="skill" src="icons/skills/html.png"><p class="text">HTML</HTML></p>
+        <div class="header-center">
+            <div class="app-logo"> JAKE NEEDHAM</div>
+        </div>
+        <div class="header-right">
+            <!-- Theme Toggle Button with Text & SVG Icons -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="themeLabel" class="theme-label">LIGHT MODE</span>
+                
+                <!-- Sun Icon -->
+                <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+
+                <!-- Moon Icon -->
+                <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+        <!-- Hero Section -->
+        <section class="page-section hero-grid" id="hero">
+            <div class="hero-text">
+                <h1>Design <br><span class="highlight">That</span> <br><span class="outlined">Connects</span></h1>
+                <p class="hero-subtext">I construct digital experiences that are intuitive, impactful, and beautifully engineered through minimalist visual design.</p>
             </div>
-            <div id="skills">
-                <img class="skill" src="icons/skills/css.png"><p class="text">CSS</p>
+            <!--<div class="hero-image-wrapper">
+                <img src="https://via.placeholder.com/600x800/111111/FFFFFF?text=Your+Photo+Here" alt="Profile Portrait">
+            </div>-->
+        </section>
+
+        <!-- About Me & Experience Section -->
+        <section class="page-section section-padding" id="about">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-statement">
+                    <h3>Crafting intentional digital products with clean structure.</h3>
+                    <p class="body-text">I am a multi-disciplinary designer and developer focused on crafting clean, high-performance web experiences. Over the past five years, I have collaborated with agencies, startups, and global brands to design digital products that balance aesthetic simplicity with technical execution.</p>
+                    <p class="body-text">My approach blends human-centered UX design, modern visual styling, and robust frontend architecture. Outside of client work, I continuously experiment with visual typography and creative interaction design.</p>
+                </div>
             </div>
-            <div id="skills">
-                <img class="skill" src="icons/skills/php.png"><P class="text">PHP</P>
+
+            <!-- Skills Pill Badges -->
+            <div class="skills-wrapper">
+                <h4 class="skills-subtitle">Core Technical Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">PHP</span>
+                    <span class="skill-pill">SQL</span>
+                    <span class="skill-pill">Linux CLI</span>
+                    <span class="skill-pill">DNS & Domains</span>
+                    <span class="skill-pill">WordPress</span>
+
+                </div>
+                <p class="location-text">Based in Nottingham, UK • Looking for Junior Web Developer/Design roles.</p>
             </div>
-            <div id="skills">
-                <img class="skill" src="icons/skills/js.png"><p class="text">JavaScript</p>
-            </div>
-            <div id="skills">
-                <img class="skill" src="icons/skills/sql.png"><p class="text">SQL</p>
+
+
+            <!-- Mini-CV / Work Experience Subsection -->
+            <div class="cv-subsection">
+                <h3 class="subsection-title">Work Experience</h3>
+                <div class="experience-timeline">
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-role">Technical Support Engineer</span>
+                            <span class="exp-date">2025 — Present</span>
+                        </div>
+                        <div class="exp-company">20i</div>
+                        <p class="exp-description">Providing first-line technical support to top UK web agencies, businesses, and resellers via live chat and ticket management systems.</p>
+                        <p class="exp-description">Diagnosing and troubleshooting site-level issues across Linux CLI environments, DNS configurations, and core web applications including WordPress.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-role">Web Design Work Experience</span>
+                            <span class="exp-date">2022 — 2024</span>
+                        </div>
+                        <div class="exp-company">Motorpoint Arena Nottingham</div>
+                        <p class="exp-description">Designed responsive interfaces, built interactive prototypes, and collaborated with engineering teams to ship high-conversion SaaS web features.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-role">Junior Frontend Designer</span>
+                            <span class="exp-date">2021 — 2022</span>
+                        </div>
+                        <div class="exp-company">Nottingham Trent Unviversity / Mansfield Museum</div>
+                        <p class="exp-description">Created wireframes, modern visual layouts, and implemented responsive web design styling for client brand storefronts.</p>
+                    </div>
+
+                </div>
             </div>
         </section>
-    </section>
-<body>
 
+        <!-- Creative Process Section -->
+        <section class="page-section section-padding" id="process">
+            <h2 class="section-title">Creative Process</h2>
+            <p class="section-intro">How I take ideas from concept to final execution.</p>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <span class="process-step">01</span>
+                    <h3 class="process-title">Discovery</h3>
+                    <p class="process-text">Researching business goals, audience needs, and user experience requirements to establish a clear foundation.</p>
+                </div>
+                <div class="process-card">
+                    <span class="process-step">02</span>
+                    <h3 class="process-title">Design</h3>
+                    <p class="process-text">Crafting wireframes, high-fidelity visual UI, interactive prototypes, and typography-driven design systems.</p>
+                </div>
+                <div class="process-card">
+                    <span class="process-step">03</span>
+                    <h3 class="process-title">Development</h3>
+                    <p class="process-text">Building clean, modern, and accessible code structure ensuring high performance across desktop and mobile devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="page-section section-padding" id="projects">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-intro">How I take ideas from concept to final execution.</p>
+            <div class="portfolio-grid">
+                
+                <div class="project-card" 
+                     data-title="Fintech Banking App" 
+                     data-category="01 / Fintech" 
+                     data-description="A complete overhaul of a modern banking UI featuring real-time analytics, dynamic custom dashboards, and high-contrast accessibility themes.">
+                    <div class="project-thumbnail">PROJECT 01</div>
+                    <div class="project-info">
+                        <span class="project-category">01 / Fintech</span>
+                        <h3 class="project-title">Fintech Banking App</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" 
+                     data-title="Summer Collection '26" 
+                     data-category="02 / E-Commerce" 
+                     data-description="High-conversion minimalist store crafted for a luxury apparel brand using a headless storefront and custom micro-animations.">
+                    <div class="project-thumbnail">PROJECT 02</div>
+                    <div class="project-info">
+                        <span class="project-category">02 / E-Commerce</span>
+                        <h3 class="project-title">Summer Collection '26</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" 
+                     data-title="Metrics Dashboard" 
+                     data-category="03 / SaaS" 
+                     data-description="Comprehensive component library and workspace layout engineered for complex enterprise data visualization and data management systems.">
+                    <div class="project-thumbnail">PROJECT 03</div>
+                    <div class="project-info">
+                        <span class="project-category">03 / SaaS</span>
+                        <h3 class="project-title">Metrics Dashboard</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="page-section section-padding" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-intro">Have a project in mind or want to collaborate? Reach out directly via the channels below.</p>
+            
+            <!-- Direct Contact Links -->
+            <div class="contact-links-grid">
+                <a href="mailto:jakejneedham@gmail.com" class="contact-card">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">jakejneedham@gmail.com</span>
+                </a>
+
+                <a href="tel:+44 7806690348" class="contact-card">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+44 7806 690 348</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jake-needham-904598263/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/jake-needham</span>
+                </a>
+            </div>
+        </section>
+        <!--<section class="page-section section-padding" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-intro">Have a project in mind or want to collaborate? Fill out the form below.</p>
+            
+            <div class="contact-box">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="userName">Name</label>
+                            <input type="text" id="userName" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email</label>
+                            <input type="email" id="userEmail" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userSubject">Subject</label>
+                        <input type="text" id="userSubject" name="subject" placeholder="Project Inquiry / General Question" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Message</label>
+                        <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about your project, timeline, and goals..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </section>-->
+
+    </main>
+
+    <!-- Floating Navigation Dock -->
+    <nav class="floating-dock" aria-label="Main Navigation">
+        <div class="dock-pill">
+            <a href="#about" class="dock-link" data-section="about">About</a>
+            <a href="#process" class="dock-link" data-section="process">Process</a>
+            <a href="#projects" class="dock-link" data-section="projects">Projects</a>
+            <a href="#contact" class="dock-link dock-cta" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Modal Lightbox Window -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalCategory"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
